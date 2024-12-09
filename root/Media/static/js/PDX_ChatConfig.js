@@ -1,7 +1,9 @@
 //Portland State University
 //CampusNexus/Talisma CRM Chat Website Toaster Configurations
  //Configuration set for D8 site
-
+if (jQuery && $===undefined) {
+  $ = jQuery
+}
 var PSUCHATMODULE = PSUCHATMODULE || {};
 PSUCHATMODULE.team = "";   // ADM, FA.
 PSUCHATMODULE.formExpand = 205;
