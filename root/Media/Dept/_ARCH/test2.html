@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Create Object from JSON String</h2>
+<p id="ADM"></p>
+<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+
+
+
+<div id="ADM"></div>
+<div id="CURL"></div>
+<script>
+var currentPage = location.hostname + location.pathname;
+
+
+var xmlhttp = new XMLHttpRequest();
+var teamurl = "test.json";
+var team = "test.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        myFunction(myArr);
+    }
+};
+xmlhttp.open("GET", teamurl, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+	
+		if (currentPage.toLowerCase().indexOf(arr[i].url.toLowerCase()) > -1)
+		{
+		 out += '<a href="' + arr[i].team + '">' +
+        arr[i].team + '</a><br>';
+		document.getElementById("ADM").innerHTML = out;
+			 
+		}
+		
+		document.getElementById("CURL").innerHTML = currentPage;
+	
+
+
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portland State University</title>
+	
+    <link rel="shortcut icon" href="https://content.oit.pdx.edu/nonprod/images/favicon.ico" />
+
+     <link href="../static/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h1>This is a test page for chat</h1>
+<p><b>This version of the page uses the normal timer to determine whether chat is open.</b> Please report problems to admissions technology; they will be collated and reported to OIT.</p>
+<p><a href="chattest_onhours.html">On-hours version</a></p>
+<p><a href="chattest_offhours.html">Off-hours version</a></p>
+<script src="../static/js/PDX_ChatConfig.js" type="text/javascript"></script>
+<script type="text/javascript">
+ $(function(){ 
+ PSUCHATMODULE.init(); });
+ </script>
+ 
+			
+</body>
+   
+</html>

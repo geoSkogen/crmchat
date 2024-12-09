@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Create Object from JSON String</h2>
+<p id="ADM"></p>
+<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+
+
+
+        <script>
+
+		var currentPage = location.hostname + location.pathname;
+		
+            function loadJSON(callback) {
+                    var xobj = new XMLHttpRequest();
+                    xobj.overrideMimeType("application/json");
+
+                    xobj.onreadystatechange = function () {
+                            if (xobj.readyState == 4 && xobj.status == "200") {
+                                // Required use of an anonymous callback as .open will NOT return 
+                                // a value but simply returns undefined in asynchronous mode
+                                callback(xobj.responseText);
+                            } else {
+                               // callback("[{\"ADM\"}]");
+                            }
+                        };
+
+                    xobj.open('GET', 'test.json', true);
+                    // Maybe you require use of an unknown origin.
+                    /*xobj.setRequestHeader("Access-Control-Allow-Origin","*");*/
+                    xobj.send(null);  
+                };
+            
+           //loadJSON(function(response) {
+                    // Parse JSON string into object
+                    //document.getElementById("demo").innerHTML = JSON.parse(response);
+                    // Parse JSON array string into object
+		var json = loadJSON(function(response)) {} ;
+	
+	// otherwise, check the list to see if current page is on it.
+	//json.urls = json.urls.tostring();
+	var jsonData = json; //JSON.parse(response)
+		document.getElementById("ADM").innerHTML = jsonData;
+;
+        </script>
+
+
+</body>
+</html>

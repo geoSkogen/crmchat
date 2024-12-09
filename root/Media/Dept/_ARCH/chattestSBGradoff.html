@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portland State University</title>
+	
+    <link rel="shortcut icon" href="https://content.oit.pdx.edu/nonprod/images/favicon.ico" />
+
+     <link href="../static/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h1>This is a test page for Graduate Business Programs chat</h1>
+<p>This version is always "off-hours".</p>
+<p><a href="chattestSBGrad.html">Graduate Business Programs timer-based version</a></p>
+<p><a href="chattestSBGradon.html">Always-on-hours version</a></p>
+ <script src="../static/js/PSUChat.js" type="text/javascript"></script>
+<script type="text/javascript">
+ $(function(){ 
+ 
+	PSUCHATMODULE.forceOffHours = true;
+	PSUCHATMODULE.init(); 
+	});
+ </script>
+ 
+			
+</body>
+   
+</html>

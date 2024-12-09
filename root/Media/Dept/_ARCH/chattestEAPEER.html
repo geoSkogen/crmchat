@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portland State University</title>
+	
+    <link rel="shortcut icon" href="https://content.oit.pdx.edu/nonprod/images/favicon.ico" />
+
+     <link href="../static/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<h1>This is a test page for EAPEER chat</h1>
+<p>This version of the page will obey the normal timer.</p>
+<p><a href="chattest.html">ADM Normal version</a></p>
+<p><a href="chattestEAPEERon.html">Always-on-hours version</a></p>
+<p><a href="chattestEAPEERoff.html">Always-off-hours version</a></p>
+ <script src="../static/js/PSUChat.js" type="text/javascript"></script>
+<script type="text/javascript">
+ $(function(){ 
+	PSUCHATMODULE.init(); 
+	});
+ </script>
+ 
+			
+</body>
+   
+</html>

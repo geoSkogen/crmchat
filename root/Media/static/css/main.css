@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "SquareSerifBook";
+    font-style: normal;
+    font-weight: normal;
+    src: local(""), url("../fonts/SquareSerif-Book-webfont.woff") format("woff"), url("../fonts/SquareSerif-Book-webfont.ttf") format("truetype"), url("../fonts/SquareSerif-Book-webfont.svg#webfont") format("svg");
+}
+
+body {
+	font:12px/1.5em Lucida Grande,Lucida Sans Unicode,sans-serif;
+	background-color:#e8e9e3;
+	color:#4f4d4d;
+	min-height:240px;
+}
+
+body, p, div, li, button, a  {
+	font-family:Lucida Grande,Lucida Sans Unicode,sans-serif;
+	font-size:14px;
+}
+
+.note {
+	font-size:12px;
+	color:#666666;
+	}
+
+td, th  {
+	font-size:12px; 
+}
+
+h1, h2, h3, h4 {
+	font-family: Verdana, Geneva, "Lucida Grande", sans-serif;
+}
+	
+h1 {
+    font-size:32px;
+	color:#603417;
+}
+
+h2 {
+    font-size: 28px;/*1.75em*/
+    line-height: 36.4px;/*1.3em*/
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+#header-wrap{
+height:230px;
+width:100%;background:#373737 no-repeat center top;
+position:relative;z-index:0;}
+#mobile-header-wrap {
+	height:120px;
+	}
+
+#header{
+	max-width:960px;
+	width:auto;
+	height:110px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+}
+
+.intro-text p { 
+	font-family: Georgia, "Times New Roman", sans-serif; 
+	font-size:17px; 
+	line-height:25px;
+	color:#8b9822; 
+	margin-bottom:10px;
+}
+#logo{display:block;}
+
+#main{
+	max-width:960px;
+	width:auto;
+	margin:0 auto;
+	margin-top:-120px;
+	position:relative;
+	z-index:5;
+	background-color:transparent;
+	}
+
+#main-content {
+	background-color:transparent;
+	padding:15px 30px 0px 30px;
+	min-height:575px;
+}
+#utility-nav-parent {
+	background-color:transparent;
+	color:white;
+	display:block;
+	font-size:10px;
+	margin-right:-20px;
+	}
+
+	#utility-nav-parent li {
+		float:right;
+		display:block;
+		height:24px;
+		vertical-align:middle;
+		}
+	
+	#utility-nav-parent li.first { border-left: solid 1px #999999; }
+#utility-nav-parent li a {
+color:white;
+font-size:12px;
+height:24px;
+padding-top:4px;
+}
+
+
+#navigation  {
+	background-image:none;
+	background-color:#8c9516;
+	height:25px;
+	margin-bottom:10px;
+	position:relative;
+	z-index:100;
+	width:auto;
+	line-height:25px;
+	}
+
+#navigation li.active,#navigation li.active-trail {
+	height:35px; 
+}
+
+.navbar {
+    background-color:transparent;
+    z-index: 9;
+    border:none;
+    position: absolute;
+    width:100%;
+	
+}
+.navbar-nav li a, .navbar-nav li a:focus { 
+	color:#fff;
+	font-size:16px;
+	background-color:transparent; 
+}
+
+.nav li a:hover, .nav li.open a.dropdown-toggle {
+	background-color:#6a7f10; 
+}
+
+.nav li.active a {
+	background-color:#fff;
+	color:#6a7f10;
+	border-bottom:solid 15px white;
+}
+
+.navbar-header button, .navbar-header .navbar-brand  { 
+	color:#fff;
+}
+
+.navbar-header button .icon-bar {
+	background-color:#fff; 	
+}
+
+.nav-dropdown-menu {
+	background-color:#6a7f10;
+}
+.collapse.in .nav {
+	background-color:#6a7f10;
+	}
+	
+.collapse.in .nav li {
+	width:100%;
+	text-align:center; 
+	}
+	
+.collapse.in .nav li a,  .collapse.in .nav li.active a {
+	font-size:20px;
+	background-color:#6a7f10;
+	border-bottom:solid 0px #000000;
+	color:white;
+}
+
+.placemat {
+    background-color: #566E10;
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    color: #FFF;
+    position: relative;
+	to
+    z-index: 0;
+	clear:both;
+}
+
+    .placemat a, .placemat a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+.requiredField {
+    color: #cc0000;
+}
+
+span.appTitle  {
+font-family:SquareSerifBook;
+    padding-left:20px;
+	margin-top:14px;
+	font-size:24px; 
+	color:#fff;
+	text-transform:uppercase ;
+	vertical-align:middle;	
+	display:block;
+}
+
+.appTitle .nonprod 
+{
+	font-weight:bold;
+	color:#ffaa66;
+}

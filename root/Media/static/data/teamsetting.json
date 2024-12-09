@@ -1,0 +1,11 @@
+[{   "ADM":{
+      "team":      "ADM",
+      "offerNoChat_text":      "Contact Admissions",
+      "offerChat_text":      "Chat with Admissions",
+	  "offhoursText": "",
+      "chatWindowHeader":      "Undergraduate Admissions",
+      "showIDField":      false,
+      "chatteamactive":      true
+   
+}
+}]
